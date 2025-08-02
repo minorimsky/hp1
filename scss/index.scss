@@ -1,0 +1,334 @@
+@use "color";
+
+$font: "M PLUS 1", sans-serif;
+
+$font-weight-regular: 400;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: $font;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+}
+img {
+    width: 100%;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+/*fv*/
+.fv {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    margin-top: 150px;
+    background-image: url(../img/fv.jpg);
+    background-size: cover;
+    background-position: 50% 40%;
+    z-index: 0;
+
+    &::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.25);
+        z-index: -1;
+    }
+}
+.fv-wrap {
+    max-width: 1224px;
+    margin: 0 auto;
+    height: inherit;
+}
+.fv-wrap__title {
+    margin-left: 5%;
+    padding-top: 327px;
+    color: #fff;
+
+    h1 {
+        font-size: 64px;
+        font-weight: $font-weight-bold;
+        line-height: 80px;
+    }
+
+    p {
+        display: inline-block;
+        margin-top: 23px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+/*診療案内*/
+.guide {
+    width: 100%;
+    background-color: color.$base-color;
+}
+.guide__items {
+    display: flex;
+    gap: 30px;
+    width: calc(1090 / 1224 * 100%);
+    margin-top: 70px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.guide__item {
+    width: calc(250 / 1000 * 100%);
+    padding: 50px 39px;
+    background-color: #fff;
+    border: 5px solid color.$accent-color;
+    border-radius: 50px;
+    text-align: center;
+    align-items: center;
+}
+.guide-item__image {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+.guide-item__text {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 30px;
+    background-color: color.$main-color;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: $font-weight-bold;
+}
+
+/*news*/
+.news {
+
+}
+.news__iists {
+    width: calc(801 / 1224 * 100%);
+    margin-top: 70px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.news__list {
+
+}
+.news-list__item {
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid color.$accent-color;
+
+    span {
+
+    }
+
+    p {
+        display: inline-block;
+        margin-left: 60px;
+    }
+}
+
+.news__button {
+    width: 180px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: auto;
+}
+.news-button {
+    display: inline-block;
+    padding: 7px 27px;
+    background-color: color.$main-color;
+    border: 3px solid color.$main-color;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: $font-weight-bold;
+    transition: all 0.3s;
+
+    &:hover {
+        background-color: #fff;
+        color: color.$main-color;
+    }
+}
+
+/*introduction*/
+.introduction {
+    background-color: color.$base-color;
+}
+.introduction__items {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 60px 80px;
+    background-color: #fff;
+    border-radius: 50px;
+}
+.introduction__message {
+    width: calc(448 / 1064 * 100%);
+}
+.introduction-message__title {
+    font-size: 24px;
+    font-weight: $font-weight-bold;
+}
+.introduction-message__text {
+    margin-top: 20px;
+
+    p {
+        display: block;
+
+        &:not(:first-child) {
+            margin-top: 10px;
+        }
+    }
+}
+.introduction__button {
+    margin-top: 28px;
+    text-align: right;
+}
+.introduction-button {
+    display: inline-block;
+    padding: 7px 27px;
+    background-color: color.$main-color;
+    border: 3px solid color.$main-color;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: $font-weight-bold;
+    transition: all 0.3s;
+
+    &:hover {
+        background-color: #fff;
+        color: color.$main-color;
+    }
+}
+.introduction__image {
+    width: calc(529 / 1064 * 100%);
+    aspect-ratio: 7 / 5;
+    border: 5px solid color.$base-color;
+    border-radius: 20px;
+
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+}
+
+/*faq*/
+.faq {
+
+}
+.faq__inner {
+    max-width: 800px;
+    width: 100%;
+    margin-top: 70px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.faq__lists {
+
+}
+.faq__list {
+    position: relative;
+    padding: 15px 40px;
+    background-color: color.$base-color;
+    border-radius: 50px;
+
+    &:not(:first-child) {
+        margin-top: 20px;
+    }
+
+    span {
+        display: inline-block;
+        margin-right: 14px;
+        font-size: 20px;
+        font-weight: $font-weight-bold;
+    }
+}
+.faq-list__tog {
+    display: none;
+}
+.faq-list__tog:checked
++ .faq-list__title
++ .faq-list__con {
+    max-height: 500px;
+    transition: all 1.5s;
+}
+.faq-list__tog:checked
++ .faq-list__title::after {
+    transform: rotate(180deg);
+}
+.faq-list__title,
+.faq-list__con {
+    transform: translate(0);
+    transition: all 0.3s;
+}
+.faq-list__title {
+    display: block;
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        top: 13px;
+        right: 0;
+        width: 20px;
+        height: 3px;
+        background-color: #333;
+        border-radius: 50px;
+        transition: all 0.3s;
+    }
+
+    &::after {
+        transform: rotate(90deg);
+    }
+}
+.faq-list__con {
+    max-height: 0;
+    overflow: hidden;
+
+    p {
+        padding: 1% 0 1%;
+    }
+}
+.faq__button {
+    margin-top: 30px;
+    text-align: center;
+}
+.faq-button {
+    display: inline-block;
+    padding: 12px 27px;
+    background-color: color.$main-color;
+    border: 3px solid color.$main-color;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: $font-weight-bold;
+    line-height: 1;
+    transition: all 0.3s;
+
+    &:hover {
+        background-color: #fff;
+        color: color.$main-color;
+    }
+}

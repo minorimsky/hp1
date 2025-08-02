@@ -1,0 +1,128 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "M PLUS 1", sans-serif;
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
+}
+
+img {
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*symptoms*/
+.symptoms__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 890px;
+  width: 100%;
+  margin-top: 60px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.symptoms__item {
+  width: 400px;
+  padding-top: 13px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #95D2B3;
+  text-align: center;
+}
+
+/*compatible-diseases*/
+.compatible-diseases {
+  border-radius: 50px 0 50px 0;
+  background-color: #95D2B3;
+}
+
+.compatible-diseases-title {
+  color: #fff;
+}
+
+.compatible-diseases__items {
+  max-width: 1000px;
+  width: 100%;
+  margin-top: 60px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.compatible-diseases__item {
+  width: 260px;
+  padding: 50px 20px;
+  border-radius: 50px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.compatible-diseases__image {
+  width: 150px;
+  height: 150px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.compatible-diseases__image img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.compatible-diseases__text {
+  margin-top: 30px;
+}
+.compatible-diseases__text p {
+  display: block;
+}
+.compatible-diseases__text p:not(:first-child) {
+  margin-top: 10px;
+}
+
+/*examination*/
+.examination {
+  border-radius: 50px 0 50px 0;
+  background-color: #D8EFD3;
+}
+
+.examination__items {
+  display: flex;
+  max-width: 800px;
+  width: 100%;
+  margin-top: 60px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 20px 50px;
+  background-color: #Fff;
+  border-radius: 50px;
+}
+
+.examination__image {
+  width: 150px;
+  height: 150px;
+}
+.examination__image img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.examination__text {
+  width: 75%;
+  margin-top: 25px;
+  margin-left: auto;
+}
