@@ -184,3 +184,8 @@ a {
 .about-cli-list__con p {
   padding: 1% 0 1%;
 }
+
+/*access*/
+.access {
+  border-top: none;
+}
