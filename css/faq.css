@@ -41,6 +41,7 @@ a {
   padding: 15px 40px;
   background-color: #95D2B3;
   border-radius: 50px;
+  cursor: pointer;
 }
 .about-tre__list:not(:first-child) {
   margin-top: 20px;
@@ -124,6 +125,7 @@ a {
   padding: 15px 40px;
   background-color: #fff;
   border-radius: 50px;
+  cursor: pointer;
 }
 .about-cli__list:not(:first-child) {
   margin-top: 20px;

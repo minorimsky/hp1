@@ -53,12 +53,13 @@ a {
   width: 64.0198511166%;
   margin-top: 30px;
   margin-left: auto;
-  font-size: 24px;
+  font-size: 20px;
 }
 
-.for-first-examination-message__text {
-  margin-top: 15px;
+.for-first-examination-message__title {
+  margin-bottom: 15px;
 }
+
 .for-first-examination-message__text:not(:first-child) {
   margin-top: 5px;
 }
@@ -96,7 +97,7 @@ a {
 
 .reception__message {
   width: 63.1513647643%;
-  margin-top: 30px;
+  margin-top: 36px;
   margin-left: auto;
-  font-size: 24px;
+  font-size: 20px;
 }

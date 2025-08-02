@@ -65,13 +65,12 @@ a {
   width: calc(516 / 806 * 100%);
   margin-top: 30px;
   margin-left: auto;
-  font-size: 24px;
+  font-size: 20px;
 }
 .for-first-examination-message__title {
-
+  margin-bottom: 15px;
 }
 .for-first-examination-message__text {
-  margin-top: 15px;
 
   &:not(:first-child) {
     margin-top: 5px;
@@ -110,9 +109,9 @@ a {
 }
 .reception__message {
   width: calc(509 / 806 * 100%);
-  margin-top: 30px;
+  margin-top: 36px;
   margin-left: auto;
-  font-size: 24px;
+  font-size: 20px;
 }
 .reception-message__text {
 
